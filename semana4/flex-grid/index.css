@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: mediumvioletred;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    margin-bottom: 100px;
+}
+
+.icone {
+    height: 1.5em;
+    margin-right: 12px;
+}
+
+.icone-e-texto {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    background-color: mediumvioletred;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
