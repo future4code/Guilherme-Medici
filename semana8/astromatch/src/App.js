@@ -1,16 +1,23 @@
 import React from 'react'
 import Axios from 'axios'
 import Styled from 'styled-components'
-import TelaInicial from './components/TelaInicial/TelaInicial'
+import Main from './components/Main/Main';
+import ResetButton from './components/ResetButton/ResetButton'
 
+const MainContainer = Styled.div`
+  display:flex;
+  justify-content: center;
+`
 
 function App() {
   return (
-
-    <div>
-      <TelaInicial/>
-    </div>
-
+<>
+    <MainContainer>
+      <Main/>
+      
+    </MainContainer>
+    <ResetButton/>
+</>
   );
 }
 
