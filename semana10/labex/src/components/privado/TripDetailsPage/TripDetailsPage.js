@@ -2,7 +2,12 @@ import React from 'react';
 
 
 function TripDetailsPage() {
-  return <div />;
+
+  return (
+    <div>
+      TripDetailsPage
+    </div>
+  )
 }
 
 export default TripDetailsPage;

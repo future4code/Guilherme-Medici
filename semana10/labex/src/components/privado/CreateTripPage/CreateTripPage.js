@@ -2,7 +2,12 @@ import React from 'react';
 
 
 function CreateTripPage() {
-  return <div />;
+
+  return (
+    <div>
+      CreateTripPage
+    </div>
+  )
 }
 
 export default CreateTripPage;
