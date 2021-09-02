@@ -1,14 +1,22 @@
-import React from 'react'
+import styled from 'styled-components'
 
+export const PrincipalContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+`
 
-const SignUpStyles = () => {
-  return (
-  
-  <div>
-      SignUpStyles
-  </div>
-  
-  )
-}
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  max-width: 450px;
+  align-items: center;
+  margin-top: 20px;
+`
 
-export default SignUpStyles
+export const FormsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`

@@ -1,12 +1,6 @@
-import React from 'react'
+import styled from 'styled-components'
 
-
-const ErrorStyles = () => {
-  return (
-    <div>
-ErrorStyles
-    </div>
-  )
-}
-
-export default ErrorStyles
+export const ErrorContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`

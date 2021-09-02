@@ -1,14 +1,8 @@
-import React from 'react'
+import styled from 'styled-components'
 
-
-const FeedStyles = () => {
-  return (
-  
-  <div>
-      FeedPage
-  </div>
-  
-  )
-}
-
-export default FeedStyles
+export const FeedMainContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 500px;
+`
