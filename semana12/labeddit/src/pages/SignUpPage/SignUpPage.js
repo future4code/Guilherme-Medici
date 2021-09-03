@@ -10,7 +10,7 @@ import { goToLoginPage } from '../../routes/Coordinator'
 import useUnprotectedPage from '../../hooks/useUnprotectedPage'
 import { SignUp } from '../../services/users'
 
-const SignUpPage = () => {
+const SignUpPage = ({setHeaderButtonText}) => {
 
   useUnprotectedPage()
 
@@ -20,7 +20,7 @@ const SignUpPage = () => {
 
   const onSubmitForm = (event) => {
     event.preventDefault()
-    SignUp(form, clear, history)
+    SignUp(form, clear, history, setHeaderButtonText)
   }
 
   return (

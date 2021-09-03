@@ -11,7 +11,7 @@ import { login } from '../../services/users'
 import useUnprotectedPage from '../../hooks/useUnprotectedPage'
 
 
-const LoginPage = () => {
+const LoginPage = ({setHeaderButtonText}) => {
 
   useUnprotectedPage()
 
@@ -21,7 +21,7 @@ const LoginPage = () => {
 
   const onSubmitForm = (event) => {
     event.preventDefault()
-    login(form, clear, history)
+    login(form, clear, history, setHeaderButtonText)
   }
 
   return (

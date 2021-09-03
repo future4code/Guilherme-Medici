@@ -7,28 +7,30 @@ const headers = {
     "Content-Type": "application/json"
 }
 
-export const login = (body, clear, history) => {
+export const login = (body, clear, history, setHeaderButtonText) => {
 
     axios.post(`${BASE_URL}/users/login`, body, headers)
 
-        .then((response) => {
-            localStorage.setItem("token", response.data.token)
+        .then((res) => {
+            localStorage.setItem("token", res.data.token)
             clear()
             goToFeedPage(history)
+            setHeaderButtonText("Logout")
         })
 
-        .catch((error) => alert("User not found!"))
-
+        .catch((err) => alert("LOGIN FAILED!"))
+    
 }
 
-export const SignUp = (body, clear, history) => {
+export const SignUp = (body, clear, history, setHeaderButtonText) => {
 
     axios.post(`${BASE_URL}/users/signup`, body, headers)
 
-        .then((response) => {
-            localStorage.setItem("token", response.data.token)
+        .then((res) => {
+            localStorage.setItem("token", res.data.token)
             clear()
             goToFeedPage(history)
+            setHeaderButtonText("Logout")
         })
-        .catch((error) => alert("Sign Up Error!"))
+        .catch((error) => alert("SIGN UP ERROR!"))
 }

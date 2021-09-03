@@ -9,7 +9,8 @@ const PostPage = () => {
   return (
   
   <div>
-      PostPage
+    <input></input>
+      <button>Postar</button>
   </div>
   
   )
