@@ -1,0 +1,4 @@
+Exercício 1
+
+a) O método para pegar os usuários seria o GET. 
+b) (app.get(/users))
