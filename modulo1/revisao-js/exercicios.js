@@ -26,7 +26,11 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-
+   const pares = function(item) {
+      return !(item % 2)
+   }
+   const numerosPares = array.filter(pares)
+   return numerosPares
 }
 
 // EXERCÍCIO 05
